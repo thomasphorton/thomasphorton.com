@@ -1,0 +1,6 @@
+version: 0.2
+            
+phases:
+  build:
+    commands:
+      - chmod +x './scripts/deploy-to-s3.sh' && './scripts/deploy-to-s3.sh'
