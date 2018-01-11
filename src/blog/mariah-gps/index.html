@@ -18,6 +18,7 @@
 
     <article>
       <header>
+        <a href="../../index.html">&lt;&lt;home</a>
         <h1 itemprop='name'>Building a Smart boat</h1>
         <time pubdate itemprop='datePublished'>
           jan 10, 2017
@@ -97,46 +98,45 @@
 
         <pre><code>// app.js
 
-        const gpsd = require('node-gpsd');
+const gpsd = require('node-gpsd');
 
-        const daemon = new gpsd.Daemon({
-          program: 'gpsd',
-          device: '/dev/ttyUSB0',
-          port: 2947,
-          pid: '/tmp/gpsd.pid',
-          readOnly: false,
-          logger: {
-            info: function() {},
-            warn: console.warn,
-            error: console.error
-          }
-        });
+const daemon = new gpsd.Daemon({
+  program: 'gpsd',
+  device: '/dev/ttyUSB0',
+  port: 2947,
+  pid: '/tmp/gpsd.pid',
+  readOnly: false,
+  logger: {
+    info: function() {},
+    warn: console.warn,
+    error: console.error
+  }
+});
 
-        const listener = new gpsd.Listener({
-          port: 2947,
-          hostname: 'localhost',
-          logger: {
-            info: function() {},
-            warn: console.lwarn,
-            error: console.error
-          },
-          parse: true
-        });
+const listener = new gpsd.Listener({
+  port: 2947,
+  hostname: 'localhost',
+  logger: {
+    info: function() {},
+    warn: console.lwarn,
+    error: console.error
+  },
+  parse: true
+});
 
-        daemon.start(() =&gt; {
-          console.log('GPS Daemon started');
+daemon.start(() =&gt; {
+  console.log('GPS Daemon started');
 
-          listener.connect(() =&gt; {
-            console.log('GPS Listener connected');
+  listener.connect(() =&gt; {
+    console.log('GPS Listener connected');
 
-            listener.watch();
+    listener.watch();
 
-            listener.on('TPV', (e) =&gt; {
-              console.log('event:', e);    
-            });
-
-          });
-        });
+    listener.on('TPV', (e) =&gt; {
+      console.log('event:', e);    
+    });
+  });
+});
         </code></pre>
 
         <p>There are two objects being used here:</p>
@@ -165,58 +165,58 @@
 
         <pre><code>// app.js
 
-        const config = require('./config.js');
+const config = require('./config.js');
 
-        const gpsd = require('node-gpsd');
-        const deviceModule = require('aws-iot-device-sdk').device;
+const gpsd = require('node-gpsd');
+const deviceModule = require('aws-iot-device-sdk').device;
 
-        const daemon = new gpsd.Daemon({
-          program: 'gpsd',
-          device: '/dev/ttyUSB0',
-          port: 2947,
-          pid: '/tmp/gpsd.pid',
-          readOnly: false,
-          logger: {
-            info: function() {},
-            warn: console.warn,
-            error: console.error
-          }
-        });
+const daemon = new gpsd.Daemon({
+  program: 'gpsd',
+  device: '/dev/ttyUSB0',
+  port: 2947,
+  pid: '/tmp/gpsd.pid',
+  readOnly: false,
+  logger: {
+    info: function() {},
+    warn: console.warn,
+    error: console.error
+  }
+});
 
-        const listener = new gpsd.Listener({
-          port: 2947,
-          hostname: 'localhost',
-          logger: {
-            info: function() {},
-            warn: console.lwarn,
-            error: console.error
-          },
-          parse: true
-        });
+const listener = new gpsd.Listener({
+  port: 2947,
+  hostname: 'localhost',
+  logger: {
+    info: function() {},
+    warn: console.lwarn,
+    error: console.error
+  },
+  parse: true
+});
 
-        const device = deviceModule({
-          keyPath: config.iot.keyPath,
-          certPath: config.iot.certPath,
-          caPath: config.iot.caPath,
-          region: config.aws.region,
-          host: config.iot.host
-        });
+const device = deviceModule({
+  keyPath: config.iot.keyPath,
+  certPath: config.iot.certPath,
+  caPath: config.iot.caPath,
+  region: config.aws.region,
+  host: config.iot.host
+});
 
-        daemon.start(() =&gt; {
-          console.log('GPS Daemon started');
+daemon.start(() =&gt; {
+  console.log('GPS Daemon started');
 
-          listener.connect(() =&gt; {
-            console.log('GPS Listener connected');
+  listener.connect(() =&gt; {
+    console.log('GPS Listener connected');
 
-            listener.watch();
+    listener.watch();
 
-            listener.on('TPV', (e) =&gt; {
-              e.trip_id = 'trip_1';
-              console.log('event:', e);    
-              device.publish('gps', JSON.stringify(e));
-            });
-          });
-        });
+    listener.on('TPV', (e) =&gt; {
+      e.trip_id = 'trip_1';
+      console.log('event:', e);    
+      device.publish('gps', JSON.stringify(e));
+    });
+  });
+});
         </code></pre>
 
         <p>All I've done here is declare a 'device', which requires the location of the certs that we transferred over to the Pi earlier. Once declared, we can use it to publish to the cloud: that's what this line is:</p>
@@ -287,7 +287,9 @@
         <h2 id="nextsteps">Next Steps</h2>
 
         <p>Now that you've got location data up into the Cloud, you're free to do whatever you want with it. I'm writing a Lambda function to gather data by trip ID and mash it together into geoJSON- a format that will allow me to plot the trip out onto a map.</p>
-      </section> 
+      </section>
+
+      <a href="../../index.html">&lt;&lt;home</a>
     </article>
 
   </body>
