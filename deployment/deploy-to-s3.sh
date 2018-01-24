@@ -19,4 +19,4 @@ while [ "$1" != "" ]; do
   shift
 done
 
-aws s3 sync ./blog/public s3://$BUCKET
+aws s3 sync ./public s3://$BUCKET
