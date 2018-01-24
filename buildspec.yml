@@ -1,6 +1,10 @@
 version: 0.2
             
 phases:
+  install:
+    commands:
+      - npm install
   build:
     commands:
-      - chmod +x './scripts/deploy-to-s3.sh' && './scripts/deploy-to-s3.sh'
+      - hexo generate
+      - chmod +x './deployment/deploy-to-s3.sh' && './deployment/deploy-to-s3.sh'
