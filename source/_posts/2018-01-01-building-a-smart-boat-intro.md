@@ -1,5 +1,6 @@
 ---
 title: Building a Smart Boat
+date: 2018-01-23 19:40:55
 ---
 Last year, we bought a boat. She's old, and she's slow, but she floats and sails and that's pretty cool. There's not much to ole Mariah, but the guy that sold her to us included a solar panel to charge cell phones and power a small lamp, and that idea of owning something and making it your own to solve a problem put a little tickle in the back of my head. I knew that I wanted to make this boat my own, but I wasn't sure how.
 
@@ -16,7 +17,6 @@ The first thing a smart boat should do is let you know where it is.
 - [ ] [USB to TTL Cable](http://amzn.to/2CYqrzh)
 - [ ] [Expansion Board](http://amzn.to/2COXpoP) (optional)
 - [ ] [Breadboard](http://amzn.to/2CI313j) (optional)
-- [ ] [Hologram Nova Cellular Modem](https://hologram.io/store/nova-global-3g-2g-cellular-modem) (optional)
 
 ### Code
 - [ ] [mariah](https://github.com/thomasphorton/mariah)
