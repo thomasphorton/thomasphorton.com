@@ -9,6 +9,7 @@ description:
 author: Thomas P. Horton
 language: default
 timezone:
+disqus_shortname: thomasphorton
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
