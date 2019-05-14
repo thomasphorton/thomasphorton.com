@@ -12,6 +12,8 @@ Let's start off with a hypothetical- you've got a simple static website for a sm
 
 For the majority of use cases, the best way to do this is going to be to use Amazon S3 to host your content. Why?
 
+<!-- more -->
+
 ## Simplicity
 As I'll show you, deploying a static website via S3 is as easy as can be.
 
