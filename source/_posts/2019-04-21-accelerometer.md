@@ -1,7 +1,10 @@
 ---
 title: Triple Axis Accelerometer Visualization
-date: 2018-04-21 19:40:55
-tags: IoT
+date: 2019-04-21 19:40:55
+tags:
+  - IoT
+  - AWS
+  - Raspberry Pi
 ---
 
 I've got an update to the Connected Boat project!

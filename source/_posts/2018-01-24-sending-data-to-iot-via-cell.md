@@ -2,6 +2,9 @@
 title: Sending Data to AWS IoT via Cell
 date: 2018-01-24 19:40:55
 tags:
+  - IoT
+  - AWS
+  - Raspberry Pi
 ---
 
 In my [previous post](/building-a-smart-boat-intro), I outlined my basic setup to use a GPS module hooked up to the Raspberry Pi to send data to the AWS IoT service. That's great when I'm at home with a hardwired connection (or wifi!), but I need to find a way to keep everything transportable and wireless.

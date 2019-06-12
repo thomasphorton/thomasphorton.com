@@ -2,6 +2,7 @@
 title: Deploying a Static Website on AWS
 date: 2018-03-08 19:40:55
 tags:
+  - AWS
 ---
 
 Let's start off with a hypothetical- you've got a simple static website for a small project, and you want to host it online. What's the best way? You can score different methods on a variety of categories:

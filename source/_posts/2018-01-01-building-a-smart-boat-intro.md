@@ -1,6 +1,9 @@
 ---
 title: Building a Smart Boat
 date: 2018-01-23 19:40:55
+tags:
+  - IoT
+  - Raspberry Pi
 ---
 Last year, we bought a boat. She's old, and she's slow, but she floats and sails and that's pretty cool. There's not much to ole Mariah, but the guy that sold her to us included a solar panel to charge cell phones and power a small lamp, and that idea of owning something and making it your own to solve a problem put a little tickle in the back of my head. I knew that I wanted to make this boat my own, but I wasn't sure how.
 
@@ -89,10 +92,10 @@ const listener = new gpsd.Listener({
 
 daemon.start(() => {
   console.log('GPS Daemon started');
-  
+
   listener.connect(() => {
     console.log('GPS Listener connected');
-  
+
     listener.watch();
 
     listener.on('TPV', (e) => {
@@ -166,10 +169,10 @@ const device = deviceModule({
 
 daemon.start(() => {
   console.log('GPS Daemon started');
-  
+
   listener.connect(() => {
     console.log('GPS Listener connected');
-  
+
     listener.watch();
 
     listener.on('TPV', (e) => {
