@@ -26,7 +26,11 @@ html, body, #container
   height: 100%
 
 body
-  background: color-background
+  // background: color-background
+  background: radial-gradient(circle at 50vw 10vh, #ffe094 0, #cc3b15 60%, #6d0f08 100%)
+  background-position: absolute
+  background-repeat: no-repeat
+  background-attachment: fixed
   font: font-size font-sans
   -webkit-text-size-adjust: 100%
 
@@ -51,8 +55,12 @@ body
 #container
   position: relative
 
+
+
 .mobile-nav-on
   overflow: hidden
+  #mobile-nav
+    visibility: visible
 
 #wrap
   height: 100%
@@ -62,9 +70,11 @@ body
   left: 0
   transition: 0.2s ease-out
   z-index: 1
-  background: color-background
   .mobile-nav-on &
     left: mobile-nav-width
+
+#mobile-nav
+  visibility: hidden
 
 if sidebar and sidebar isnt bottom
   #main
