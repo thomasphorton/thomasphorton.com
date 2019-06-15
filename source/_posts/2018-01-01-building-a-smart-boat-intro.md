@@ -25,7 +25,7 @@ The first thing a smart boat should do is let you know where it is.
 - [ ] [mariah](https://github.com/thomasphorton/mariah)
 
 ## Architecture
-{% asset_img mariah-architecture.png [The Raspberry Pi reads from the GPS sensor and sends information to AWS IoT via MQTT. The data is then fanned out to DynamoDB with the IoT Rules engine.] %}
+{% asset_img mariah-architecture.png "The Raspberry Pi reads from the GPS sensor and sends information to AWS IoT via MQTT. The data is then fanned out to DynamoDB with the IoT Rules engine." %}
 
 The base architecture of the project is pretty simple.
 
