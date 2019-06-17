@@ -1,6 +1,7 @@
 # Header
 menu:
   Home: /
+  Parts: /parts
   Archives: /archives
 rss: /atom.xml
 
