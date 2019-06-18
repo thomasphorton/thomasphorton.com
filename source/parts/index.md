@@ -1,10 +1,11 @@
 ---
 title: My IoT Toolbox
+description: bar
 ---
 
-What's in the box?
+What's in my Internet of Things (IoT) Toolbox? Lots of different modules and sensors that I've collected over the years. These things are cheap and always seem to come in multiples, so I've organized them all in a tackle box that I can always dig through when a project idea comes up.
 
-I've amassed a collection of gear over the years, some of which collects dust for a long time before I figure out what I'm going to use it for. This list is more for my sanity than anything else!
+This list is more for my sanity than anything else!
 
 # Platforms
 * Raspberry Pi 3B+
