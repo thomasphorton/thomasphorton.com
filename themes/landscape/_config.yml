@@ -13,7 +13,6 @@ fancybox: true
 sidebar: right
 widgets:
 - category
-- tag
 - tagcloud
 - archive
 - recent_posts
@@ -32,7 +31,8 @@ show_count: false
 google_analytics:
 gauges_analytics:
 favicon: /favicon.png
-twitter:
+twitter: thomasphorton
+github: thomasphorton
 google_plus:
 fb_admins:
 fb_app_id:
