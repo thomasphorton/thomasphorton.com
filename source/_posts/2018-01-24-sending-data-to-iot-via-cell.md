@@ -9,6 +9,8 @@ tags:
 
 In my [previous post](/building-a-smart-boat-intro), I outlined my basic setup to use a GPS module hooked up to the Raspberry Pi to send data to the AWS IoT service. That's great when I'm at home with a hardwired connection (or wifi!), but I need to find a way to keep everything transportable and wireless.
 
+![Hologram Nova Unboxing](https://media.giphy.com/media/xThtadqxWqdC0c18K4/giphy.gif)
+
 <!-- more -->
 
 My requirements:
@@ -19,8 +21,6 @@ My requirements:
 After an admittably short time searching, I found a really cool solution in [Hologram](https://hologram.io/). They offer a USB cell phone modem, specifically built for IoT projects like this. I ended up ordering the [Nova Global 3G/2G Cellular Modem](https://hologram.io/store/nova-global-3g-2g-cellular-modem) for $49. I also ordered an extra SIM card, which ended up being unnecessary- the Nova comes with one!
 
 Developer pricing for Hologram seems pretty reasonable. The first 1MB/mo is free, and then you pay $0.60/MB after that. You can set Data Limits by the byte as well, which is great for preventing overages while experimenting.
-
-![Hologram Nova Unboxing](https://media.giphy.com/media/xThtadqxWqdC0c18K4/giphy.gif)
 
 ## Using the Hologram Nova
 The Nova couldn't be simpler to use. It comes with a plastic casing that you can snap around the board, and two different basic antennas that can snap on. The board takes U.fl/IPEX connectors, so you can rig up a better antenna, which I'll do once I start testing on the boat itself.
