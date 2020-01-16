@@ -9,7 +9,6 @@ tags:
 date: 2020-01-15 19:14:39
 ---
 
-
 This last week I've building a bunch of sensor modules lately to compliment my new local MQTT broker -> AWS IoT setup that I threw together. One limiting factor for my rollout was powering all of these devices- it isn't exactly sustainable to run all of these off of microUSB plugged into the wall. I specifically wired up a waterproof temperature sensor so that I could monitor the lake temperature, before realizing that I had no good way to run it without punching a hole in the side of our house or leaving a window open.
 
 That's a no go.
@@ -17,6 +16,8 @@ That's a no go.
 Enter the world of batteries: small bricks of chemicals that you can zap power into and pull it back out later. I'm honestly terrified of them, but I think it's healthy to treat them with respect- if you aren't careful, you can get hurt.
 
 In this walkthrough, I'll go over how to wire up a battery/charging solution for your ESP8266 projects, as well as a simple method to reduce your project's power consumption so you don't have to charge up every few hours.
+
+<!--more -->
 
 ## Ingredients
 ### Components
