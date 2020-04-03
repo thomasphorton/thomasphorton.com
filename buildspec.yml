@@ -9,5 +9,5 @@ phases:
       - npm install
   build:
     commands:
-      - hexo generate
+      - hexo generate --config _config.yml,_config.prod.yml
       - chmod +x './deployment/deploy-to-s3.sh' && './deployment/deploy-to-s3.sh'
