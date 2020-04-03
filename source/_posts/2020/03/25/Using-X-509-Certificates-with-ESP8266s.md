@@ -11,7 +11,7 @@ date: 2020-03-25 18:40:43
 
 If you're looking to add *the cloud* to your IoT projects, one of the most powerful products available is AWS IoT Core. It's a collection of IoT-related services and features rolled into one package, allowing data from edge devices to flow into the rest of AWS. Once the data has reached AWS, there are a lot of things you can do- from simple operations such as logging, storage, and event triggering to more advanced actions like machine learning and anomaly detection.
 
-Let's not get ahead of ourselves though- first, the device has to connect to the service! AWS IoT Core requires authentication via X.509 certificates. While loading them onto a Raspberry Pi is fairly straightforward using the AWS IoT SDK, it is a little more involved for ESPs (both 32s and 8266s). In this post, I'll walk through my current methodology for loading these certs onto an ESP8266 so you can start integrating your IoT projects with AWS IoT Core.
+Let's not get ahead of ourselves though- first, the device has to connect to the service! AWS IoT Core requires authentication via X.509 certificates. While loading them onto a Raspberry Pi is fairly straightforward using the AWS IoT SDK, it is a little more involved for ESPs (both [32s](/parts/ESP32/) and [8266s](/parts/ESP8266-NodeMCU/)). In this post, I'll walk through my current methodology for loading these certs onto an ESP8266 so you can start integrating your IoT projects with AWS IoT Core.
 
 <!-- more -->
 

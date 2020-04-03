@@ -1,0 +1,31 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <%- partial('post/gallery') %>
+      <% if (post.link || post.title){ %>
+        <header class="article-header">
+          <%- partial('post/title', {class_name: 'article-title'}) %>
+        </header>
+      <% } %>
+      <div class="part-entry" itemprop="articleBody">
+        <% if (post.amazonAsin) { %>
+          <a href="https://www.amazon.com/gp/product/<%= post.amazonAsin %>/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=thophor07-20&linkId=81f61bb0119372402cc5d8cdc2845234&language=en_US" target="_blank">
+            <img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=<%= post.amazonAsin %>&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=thophor07-20&language=en_US" >
+            <img src="https://ir-na.amazon-adsystem.com/e/ir?t=thophor07-20&language=en_US&l=li2&o=1&a=<%= post.amazonAsin %>" />
+          </a>
+        <% } %>
+
+        <%- post.content %>
+
+        <% if (post.amazonAsin) { %>
+          <h2><a href="https://www.amazon.com/gp/product/<%= post.amazonAsin %>/ref=as_li_ss_tl?ie=UTF8&psc=1&linkCode=ll1&tag=thophor07-20&linkId=8e7397ec0c3f36956ec2b9dd98d6f70f&language=en_US">Buy this part on Amazon!</a></h2>
+        <% } %>
+      </div>
+      <footer class="article-footer">
+        <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
+        <%- partial('post/tag') %>
+      </footer>
+    </div>
+    <% if (!index){ %>
+      <%- partial('post/nav') %>
+    <% } %>
+  </article>

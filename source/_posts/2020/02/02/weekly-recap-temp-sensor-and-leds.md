@@ -19,7 +19,7 @@ Plus, [I did a few streams on Twitch](https://www.twitch.tv/rampage_wildcard)! N
 
 ## This Week's Projects
 * V2 - [Battery Operated Waterproof Temperature Sensor](/2020/01/15/battery-operated-esp8266/)
-* Addressable LEDs ([WS2128B](https://amzn.to/2RSZ0Qg))
+* Addressable LEDs ([WS2128B](/parts/WS2812B/))
 
 ### Waterproof Temperature Sensor V2
 No code changes to this project- instead, V2 focused on hardware functionality (read: drilling better holes). 3 things got changed up in this iteration. If you'd like to see what I did in V1, [check out my previous post](/2020/01/15/battery-operated-esp8266/).
@@ -35,11 +35,11 @@ No code changes to this project- instead, V2 focused on hardware functionality (
 I'm pretty happy with how everything has turned out so far! Battery life continues to be a pain- I'm only getting a few days out of a charge. I've got a few ideas for V3 already, and using BLE (Bluetooth Low Energy) to decrease that power draw is on the radar.
 
 ### Addressable LEDs
-I picked up this [spool of LEDs on Amazon](https://amzn.to/2RSZ0Qg) a while back and I've been waiting for an excuse to play with it. A lazy Saturday seemed like the perfect reason!
+I picked up this [spool of LEDs on Amazon](/parts/WS2812B/) a while back and I've been waiting for an excuse to play with it. A lazy Saturday seemed like the perfect reason!
 
 {% asset_img rainbow-leds.png "LEDs in a rainbow pattern, attached to an ESP8266" %}
 
-Turns out, the [FastLED library](https://github.com/FastLED/FastLED) makes addressable LED strips incredibly easy. It supports a bunch of different LED chipsets, including what I've got- the WS2812B.
+Turns out, the [FastLED library](https://github.com/FastLED/FastLED) makes addressable LED strips incredibly easy. It supports a bunch of different LED chipsets, including what I've got- the [WS2812B](/parts/WS2812B/).
 
 After doing some simple tests, I set out to recreate the [Philips Hue LightStrip](https://github.com/FastLED/FastLED)- that meant hooking up the ESP8266 to AWS IoT so I could control them from an external source. Figuring out how to get the x.509 certificates loaded into the ESP8266 took a bit longer than I thought, so I called it a night once I was able to do some basic switching through AWS IoT. I still need to clean up the code a bit before I can publish it to GitHub- hardcoded credentials and spaghetti code everywhere.
 
