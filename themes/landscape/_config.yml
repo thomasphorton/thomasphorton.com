@@ -1,8 +1,8 @@
 # Header
 menu:
   Home: /
-  Parts: /parts
-  Archives: /archives
+  Parts: /parts/
+  Archives: /archives/
 rss: /atom.xml
 
 # Content
