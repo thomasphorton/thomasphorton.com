@@ -8,21 +8,23 @@ What's in my Internet of Things (IoT) Toolbox? Lots of different modules and sen
 This list is more for my sanity than anything else!
 
 ## Platforms
-* Raspberry Pi 3B+
-* [Raspberry Pi 0 Wifi](https://amzn.to/2FgM6oA)
-* Arduino Leonardo
-* [ESP-8266 (Wifi Boards)](https://amzn.to/31GzErI)
+* [NodeMCU ESP8266](/parts/ESP8266-NodeMCU/)
+* [ESP32](/parts/ESP32/)
+* [Raspberry Pi 0 Wifi](/parts/Raspberry-Pi-0-WiFi/)
 
 ## Chips
 * [MCP3008](https://amzn.to/2Xiz5oS)
 
 ## Sensors
-* [ADXL335 - Triple-Axis Accelerometer](https://amzn.to/2KSSVjM)
+* [ADXL335 - Triple-Axis Accelerometer](/parts/ADXL335/)
 * GPS
-* [Hygrometer (Soil Humidity)](https://amzn.to/2Zz2zMP)
-* [RFID Tags/Reader](https://amzn.to/2Im6Zk4)
-* [SW520D - Tilt](https://amzn.to/2MT522U)
-* [DHT22 AM2302 - Humidity/Temperature](https://amzn.to/2FiQmnM)
+* [Hygrometer (Soil Humidity)](/parts/hygrometer)
+* [RFID Tags/Reader](/parts/RC522)
+* [SW520D - Tilt](/parts/SW50D/)
+* [DHT22 (AM2302) - Humidity/Temperature](/parts/DHT22/)
+
+## Lights
+* [WS2812B Addressable LED Strip](/parts/WS2812B/)
 
 ## Connectivity
 * [Antenna Pigtail Adapter](https://amzn.to/2Ffl80S)
