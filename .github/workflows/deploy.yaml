@@ -36,7 +36,7 @@ jobs:
       - run: npm ci
       - name: Build with Hexo
         # Outputs to the './public' directory by default
-        run: npm run hexo generate
+        run: npm run hexo generate --config _config.yml,_config.github-pages.yml
       - name: Upload artifact
         # Automatically uploads an artifact from the './public' directory by default
         uses: actions/upload-pages-artifact@v1
