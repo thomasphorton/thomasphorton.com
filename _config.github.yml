@@ -2,4 +2,4 @@ render_drafts: false
 deploy:
   stage: prod
 
-root: /
+root: ./
