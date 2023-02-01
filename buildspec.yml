@@ -5,9 +5,8 @@ phases:
     runtime-versions:
       nodejs: 12
     commands:
-      - npm install hexo -g
-      - npm install
+      - npm ci
   build:
     commands:
-      - hexo generate --config _config.yml,_config.prod.yml
+      - npm run generate-s3
       - chmod +x './deployment/deploy-to-s3.sh' && './deployment/deploy-to-s3.sh'

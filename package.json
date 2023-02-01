@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "4.2.0"
+    "version": "6.3.0"
   },
   "dependencies": {
     "hexo": "^6.3.0",
@@ -19,7 +19,10 @@
     "hexo-server": "^0.2.2"
   },
   "scripts": {
-    "dev": "hexo server",
-    "hexo": "hexo"
+    "dev": "hexo server --config _config.yml,_config.github.yml",
+    "hexo": "hexo",
+    "generate-s3": "hexo generate --config _config.yml,_config.s3.yml",
+    "generate-github": "hexo generate --config _config.yml,_config.github.yml",
+    "v": "hexo --version"
   }
 }
